@@ -201,7 +201,7 @@ def getOP(s):
 
 # get sticker representation from OP representation
 def getStickers(sOP):
-  s = np.zeros(24, dtype=np.int)
+  s = np.zeros(24, dtype=int)
   s[[14, 18, 23]] = [3, 4, 5]
   for i in range(7):
     s[pieceDefs[i]] = pieceCols[sOP[i, 0], sOP[i, 1], :]
